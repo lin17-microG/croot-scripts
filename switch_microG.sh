@@ -26,21 +26,21 @@ switch_zpatch() {
 
 case "$1" in
   microG) 
-    BRANCH1="lin-16.0-microG"
+    BRANCH1="lin-17.1-microG"
 #    BRANCH2="lineage-16.0"
 #    BRANCH3="lin-16.0-microG"
 #    BRANCH4="lin-16.0-microG"
-    PATCHV="S"
+    PATCHV="N"
     ;;
   default) 
-    BRANCH1="lineage-16.0"
+    BRANCH1="lineage-17.1"
 #    BRANCH2="lineage-16.0"
 #    BRANCH3="lineage-16.0"
 #    BRANCH4="lineage-16.0"
     PATCHV="S"
     ;;
   reference) 
-    BRANCH1="lineage-16.0"
+    BRANCH1="lineage-17.1"
 #    BRANCH2="lineage-16.0"
 #    BRANCH3="lineage-16.0"
 #    BRANCH4="changelog"
@@ -49,9 +49,9 @@ case "$1" in
   *) 
     echo "usage: switch_microg.sh default | microG | reference"
     echo "-"
-    echo "  default   - LineageOS 16.0"
+    echo "  default   - LineageOS 17.1"
     echo "  microG    - hardened microG build"
-    echo "  reference - 100% LineageOS 16.0 (no patches - for 'repo sync')"
+    echo "  reference - 100% LineageOS 17.1 (no patches - for 'repo sync')"
     exit
     ;;   
 esac
