@@ -30,7 +30,7 @@ case "$1" in
 #    BRANCH2="lineage-16.0"
 #    BRANCH3="lin-16.0-microG"
 #    BRANCH4="lin-16.0-microG"
-    PATCHV="N"
+    PATCHV="S"
     ;;
   default) 
     BRANCH1="lineage-17.1"
