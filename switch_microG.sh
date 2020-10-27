@@ -58,6 +58,7 @@ esac
 
 switch_zpatch $BRANCH1 R
 
+switch_branches $BRANCH1 art
 #switch_branches $BRANCH1 build/make
 #switch_branches $BRANCH2 external/selinux
 #switch_branches $BRANCH2 frameworks/av
@@ -65,16 +66,16 @@ switch_branches $BRANCH1 frameworks/base
 #switch_branches $BRANCH1 frameworks/native
 #switch_branches $BRANCH2 frameworks/opt/net/wifi
 #switch_branches $BRANCH2 frameworks/opt/telephony
-switch_branches $BRANCH1 lineage-sdk
-#switch_branches $BRANCH3 packages/apps/Camera2
-#switch_branches $BRANCH3 packages/apps/Dialer
+#switch_branches $BRANCH1 lineage-sdk
+switch_branches $BRANCH1 libcore
 #switch_branches $BRANCH3 packages/apps/Jelly
 switch_branches $BRANCH1 packages/apps/LineageParts
+switch_branches $BRANCH3 packages/apps/Nfc
 switch_branches $BRANCH1 packages/apps/Settings
 #switch_branches $BRANCH3 packages/services/Telecomm
 #switch_branches $BRANCH2 packages/services/Telephony
 #switch_branches $BRANCH2 system/bt
-#switch_branches $BRANCH1 system/core
+switch_branches $BRANCH1 system/core
 #switch_branches $BRANCH2 system/netd
 #switch_branches $BRANCH1 system/sepolicy
 #switch_branches $BRANCH2 system/vold
