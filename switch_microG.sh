@@ -71,6 +71,7 @@ switch_branches $BRANCH2 bionic
 switch_branches $BRANCH1 frameworks/base
 switch_branches $BRANCH3 frameworks/native
 switch_branches $BRANCH1 libcore
+switch_branches $BRANCH1 packages/apps/Bluetooth
 switch_branches $BRANCH1 packages/apps/LineageParts
 switch_branches $BRANCH1 packages/apps/Nfc
 switch_branches $BRANCH1 packages/apps/Settings
@@ -78,7 +79,7 @@ switch_branches $BRANCH3 system/core
 switch_branches $BRANCH1 system/sepolicy
 switch_branches $BRANCH1 vendor/lineage
 switch_branches $BRANCH1 .repo/local_manifests
-#switch_branches $BRANCH4 OTA
+switch_branches $BRANCH4 OTA
 
 switch_zpatch $BRANCH1 $PATCHV
 
