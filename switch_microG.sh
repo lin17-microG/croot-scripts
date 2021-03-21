@@ -34,12 +34,12 @@ switch_zpatch() {
   cd z_patches
   echo "-"
   echo "$PWD"
-  case "$2" in 
+  case "$2" in
     R) ./patches_reverse.sh
        cd $TOPDIR
        switch_branches $1 z_patches
        ;;
-    S) ./patches_apply.sh  
+    S) ./patches_apply.sh
        ;;
   esac
   cd $TOPDIR
@@ -77,7 +77,7 @@ case "$1" in
     BRANCH4="changelog"
     PATCHV="N"
     ;;
-  *) 
+  *)
     echo "usage: switch_microg.sh default | microG | reference"
     echo "-"
     echo "  default   - LineageOS 17.1"
@@ -85,7 +85,7 @@ case "$1" in
     echo "  hmalloc   - hardened microG build with hardened-malloc"
     echo "  reference - 100% LineageOS 17.1 (no patches - for 'repo sync')"
     exit
-    ;;   
+    ;;
 esac
 
 switch_zpatch $BRANCH3 R
@@ -99,6 +99,7 @@ switch_branches $BRANCH1 packages/apps/Bluetooth
 switch_branches $BRANCH1 packages/apps/LineageParts
 switch_branches $BRANCH1 packages/apps/Nfc
 switch_branches $BRANCH1 packages/apps/Settings
+switch_branches $BRANCH1 packages/apps/Trebuchet
 switch_branches $BRANCH3 system/core
 switch_branches $BRANCH1 system/sepolicy
 switch_branches $BRANCH1 vendor/lineage
@@ -106,4 +107,3 @@ switch_branches $BRANCH1 .repo/local_manifests
 switch_branches $BRANCH4 OTA
 
 switch_zpatch $BRANCH1 $PATCHV
-
