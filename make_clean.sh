@@ -2,5 +2,5 @@
 
 # Out directory on SSD
 export OUT_DIR_COMMON_BASE=~/out-android
-make clean
+make -j  clean
 
