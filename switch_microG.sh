@@ -101,7 +101,7 @@ switch_branches $BRANCH1 packages/apps/Nfc
 switch_branches $BRANCH1 packages/apps/Settings
 switch_branches $BRANCH1 packages/apps/Trebuchet
 switch_branches $BRANCH3 system/core
-switch_branches $BRANCH1 system/sepolicy
+switch_branches $BRANCH3 system/sepolicy
 switch_branches $BRANCH1 vendor/lineage
 switch_branches $BRANCH1 .repo/local_manifests
 switch_branches $BRANCH4 OTA
