@@ -94,6 +94,7 @@ switch_branches $BRANCH1 art
 switch_branches $BRANCH2 bionic
 switch_branches $BRANCH1 frameworks/base
 switch_branches $BRANCH3 frameworks/native
+switch_branches $BRANCH1 frameworks/opt/net/wifi
 switch_branches $BRANCH1 libcore
 switch_branches $BRANCH1 packages/apps/Bluetooth
 switch_branches $BRANCH1 packages/apps/LineageParts
